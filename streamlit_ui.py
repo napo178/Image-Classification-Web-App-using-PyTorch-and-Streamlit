@@ -6,7 +6,7 @@ import torch
 import streamlit as st
 
 # set title of app
-st.title("Simple Image Classification Application")
+st.title(" CRMB Simple Image Classification Application using Resnet transformers")
 st.write("")
 
 # enable users to upload images for the model to make predictions
