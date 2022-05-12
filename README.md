@@ -13,10 +13,6 @@ Table of Contents :bookmark_tabs:
 ## Overview
 A simple web demo with minimal framework using PyTorch and Streamlit to showcase an image classification model
 
-## Steps to Use the Application
-- Clone the repository onto your own local machine
-
-![image](https://user-images.githubusercontent.com/45563371/102073488-58953500-3e3e-11eb-9581-e16823f808fd.png)
 
 - Open command prompt/terminal
 
