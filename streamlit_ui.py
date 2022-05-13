@@ -7,7 +7,16 @@ import streamlit as st
 
 # set title of app
 st.title(" CRMB Simple Image Classification Application using Resnet transformers")
-st.write("")
+
+st.title( 'DEMO FOR IMAGE DETECTION')
+
+from PIL import Image
+image = Image.open('/Users/napoleonperez/Documents/GitHub/Image-Classification-Web-App-using-PyTorch-and-Streamlit/crmb.png')
+
+st.image(image, caption='Image', use_column_width=True)
+
+
+
 
 # enable users to upload images for the model to make predictions
 file_up = st.file_uploader("Upload an image", type = "jpg")
