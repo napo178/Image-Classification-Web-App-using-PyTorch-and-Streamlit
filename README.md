@@ -14,9 +14,6 @@ Table of Contents :bookmark_tabs:
 A simple web demo with minimal framework using PyTorch and Streamlit to showcase an image classification model
 
 
-- Open command prompt/terminal
-
-![image](https://user-images.githubusercontent.com/45563371/102073585-7b274e00-3e3e-11eb-8656-a67df96b995a.png)
 
 - Run pip install -r requirements.txt
 
