@@ -1,14 +1,20 @@
 """Create an Image Classification Web App using PyTorch and Streamlit."""
 # import libraries
+
 from PIL import Image
 from torchvision import models, transforms
 import torch
 import streamlit as st
 
+
 # set title of app
 st.title(" CRMB Simple Image Classification Application using Resnet transformers")
 
 st.title( 'DEMO FOR IMAGE DETECTION')
+
+
+
+
 
 from PIL import Image
 image = Image.open('/Users/napoleonperez/Documents/GitHub/Image-Classification-Web-App-using-PyTorch-and-Streamlit/crmb.png')
@@ -20,6 +26,9 @@ st.image(image, caption='Image', use_column_width=True)
 
 # enable users to upload images for the model to make predictions
 file_up = st.file_uploader("Upload an image", type = "jpg")
+
+
+
 
 
 def predict(image):
@@ -58,6 +67,9 @@ def predict(image):
     prob = torch.nn.functional.softmax(out, dim = 1)[0] * 100
     _, indices = torch.sort(out, descending = True)
     return [(classes[idx], prob[idx].item()) for idx in indices[0][:5]]
+
+
+
 
 
 if file_up is not None:
